@@ -1,0 +1,60 @@
+
+import * as inquirer from 'inquirer';
+import chalk from 'chalk';
+import * as simplegit from 'simple-git/promise';
+
+const log = console.log;
+
+const cwd = process.cwd()
+const git = simplegit(cwd)
+
+const checkoutOptions = [
+    {
+        name: `Stash my changes (they can be restored with the command 'git stash pop')`,
+        value: 'stash',
+    },
+    {
+        name: `I already fix it, try again`,
+        value: 'retry',
+    },
+    {
+        name: `exit`,
+        value: 'exit',
+    }
+]
+
+const errorOnCheckoutQuestion = [
+    {
+        type: 'list',
+        name: 'targetBranch',
+        message: 'There was a problem checking out the target branch...',
+        choices: checkoutOptions
+    }
+]
+
+
+export async function doCheckout(options: any){
+    try {
+        log(chalk.blue(`checking out target branch ${options.targetBranch}`))
+        await git.checkout(options.targetBranch);
+    } catch (err) {
+        const answer = await inquirer.prompt(errorOnCheckoutQuestion);
+
+        switch(answer.targetBranch){
+            case 'stash': {
+                log(chalk.blue(`Stashing changes...`))
+                await git.stash();
+                await doCheckout(options);
+                return;
+            }
+            case 'retry': {
+                await doCheckout(options);
+                return;
+            }
+            case 'exit': {
+                process.exit(1);
+            }
+        }
+    }
+
+}
