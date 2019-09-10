@@ -1,8 +1,13 @@
+import chalk from "chalk";
+
 const exec = require('await-exec')
-const execOpts = { log: true }
+const execOpts = { log: false }
 
 export default async function getCurrentBundleStats(filePrefix: string) {
-    await exec('yarn install', execOpts)
-    await exec(`webpack --profile --json > bba/${filePrefix}-stats.json`, execOpts)
+    try {
+        await exec(`webpack --profile --json > bba/${filePrefix}-stats.json`, execOpts)
+    } catch(err){
+        console.log(chalk.red(`The following error ocurre while running your webpack configuration:`))
+    }
 
 }
