@@ -1,41 +1,39 @@
 import * as fs from 'fs';
 import { promisify } from 'util';
 import chalk from 'chalk';
-import getCurrentBundleStats from './getCurrentBundleStats';
-import compareStats from './compareStats';
+import { getCurrentBundleStats } from './getCurrentBundleStats';
+import { compareStats } from './compareStats';
 import { doCheckout, getCurrentBranchName } from './git';
-import logStats from './logStat';
+import { logStats } from './logStat';
+import { OptionsI } from './types';
 
 const log = console.log;
-const cwd = process.cwd()
+const cwd = process.cwd();
 const mkDir = promisify(fs.mkdir);
 
+export async function main(options: OptionsI) {
+  try {
+    await mkDir(`${cwd}/bba`);
+  } catch (e) {}
+  const currentBranch = getCurrentBranchName();
 
-export default async function main(options: any) {
+  log(chalk.blue(`Getting ${currentBranch} stats...`));
+  await getCurrentBundleStats('current');
 
-    try {
-        await mkDir(`${cwd}/bba`)
-    } catch (e) {
+  await doCheckout(options);
 
-    }
-    const currentBranch = getCurrentBranchName();
+  try {
+    log(chalk.blue(`Getting ${options.targetBranch} stats...`));
+    await getCurrentBundleStats('target');
+    await doCheckout({ ...options, targetBranch: '-' });
+  } catch (err) {
+    throw new Error(err);
+  }
 
-    log(chalk.blue(`Getting ${currentBranch} stats...`))
-    await getCurrentBundleStats('current');
-
-    await doCheckout(options);
-
-    try {
-        log(chalk.blue(`Getting ${options.targetBranch} stats...`))
-        await getCurrentBundleStats('target');
-        await doCheckout({targetBranch: '-'});
-
-    } catch (err) {
-        throw new Error(err);
-    }
-
-    log(chalk.blue(`Comparing stats...`))
-    const bundlesStatReport = compareStats(`bba/${options.targetBranch}-stats.json`, `bba/${currentBranch}-stats.json`);
-    logStats(bundlesStatReport);
-
+  log(chalk.blue(`Comparing stats...`));
+  const bundlesStatReport = compareStats(
+    `bba/${options.targetBranch}-stats.json`,
+    `bba/${currentBranch}-stats.json`
+  );
+  logStats(bundlesStatReport);
 }

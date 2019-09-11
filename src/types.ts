@@ -1,19 +1,34 @@
-
 export interface BundleStatI {
-    name: string;
-    targetSize: number;
-    currentSize: number;
-    difference: number;
-    pdiff: number;
+  name: string;
+  targetSize: number;
+  currentSize: number;
+  difference: number;
+  pdiff: number;
 }
 
 export interface BundlesReportI {
-    onlyInCurrent: Array<BundleStatI>; 
-    onlyInTarget: Array<BundleStatI>; 
-    biggerInCurrent: Array<BundleStatI>; 
-    smallerInCurrent: Array<BundleStatI>; 
-    equal: Array<BundleStatI>; 
-    totalDiff: number;
-    totalPercentage: number;
-    
+  onlyInCurrent: BundleStatI[];
+  onlyInTarget: BundleStatI[];
+  biggerInCurrent: BundleStatI[];
+  smallerInCurrent: BundleStatI[];
+  equal: BundleStatI[];
+  totalDiff: number;
+  totalPercentage: number;
+}
+
+export interface OptionsI {
+  targetBranch: string;
+  skipPrompts: boolean;
+}
+
+export interface AssetI {
+  name: string;
+  size: number;
+  chunks: number[];
+  chunkNames: string[];
+  emitted: boolean;
+}
+
+export interface AssetCollectionI {
+  [key: string]: number;
 }

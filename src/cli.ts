@@ -1,56 +1,53 @@
 import * as arg from 'arg';
 import * as inquirer from 'inquirer';
-import getBundles from './main';
+import { main } from './main';
+import { OptionsI } from './types';
 
-
-async function promptForMissingOptions(options: any) {
-    const defaultTemplate = 'JavaScript';
-    if (options.skipPrompts) {
-      return {
-        ...options,
-        template: options.template || defaultTemplate,
-      };
-    }
-   
-    const questions = [];
-
-    if (!options.targetBranch) {
-      questions.push({
-        type: 'input',
-        name: 'targetBranch',
-        message: 'Please specify the target branch to be compared',
-        default: 'master',
-      });
-    }
-   
-    const answers = await inquirer.prompt(questions);
+async function promptForMissingOptions(options: OptionsI): Promise<OptionsI> {
+  if (options.skipPrompts) {
     return {
       ...options,
-      targetBranch: options.targetBranch || answers.targetBranch,
     };
-   }
-   
+  }
 
+  const questions = [];
 
-function parseArgumentsIntoOptions(rawArgs: any) {
- const args = arg(
-   {
-     '--targetBranch': String,
-     '-t': '--targetBranch',
-   },
-   {
-     argv: rawArgs.slice(2),
-   }
- );
- return {
-   skipPrompts: args['--targetBranch'] || false,
- };
+  if (!options.targetBranch) {
+    questions.push({
+      type: 'input',
+      name: 'targetBranch',
+      message: 'Please specify the target branch to be compared',
+      default: 'master',
+    });
+  }
+
+  const answers: OptionsI = await inquirer.prompt(questions);
+  return {
+    ...options,
+    targetBranch: options.targetBranch || answers.targetBranch,
+  };
 }
 
+function parseArgumentsIntoOptions(rawArgs: string[]) {
+  const args = arg(
+    {
+      '--targetBranch': String,
+      '--yes': Boolean,
+      '-t': '--targetBranch',
+      '-y': '--yes',
+    },
+    {
+      argv: rawArgs.slice(2),
+    }
+  );
+  return {
+    skipPrompts: !!args['--yes'] || false,
+    targetBranch: args['--targetBranch'] || '',
+  };
+}
 
-export default async function cli(args: any) {
-    let options = parseArgumentsIntoOptions(args);
-    options = await promptForMissingOptions(options);
-    await getBundles(options)
-    console.log('finish');
+export async function cli(args: string[]) {
+  let options = parseArgumentsIntoOptions(args);
+  options = await promptForMissingOptions(options);
+  await main(options);
 }
