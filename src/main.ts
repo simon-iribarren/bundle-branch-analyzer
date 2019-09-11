@@ -1,9 +1,10 @@
 import * as fs from 'fs';
 import { promisify } from 'util';
+import chalk from 'chalk';
 import getCurrentBundleStats from './getCurrentBundleStats';
 import compareStats from './compareStats';
-import chalk from 'chalk';
-import { doCheckout } from './git';
+import { doCheckout, getCurrentBranchName } from './git';
+import logStats from './logStat';
 
 const log = console.log;
 const cwd = process.cwd()
@@ -17,16 +18,16 @@ export default async function main(options: any) {
     } catch (e) {
 
     }
+    const currentBranch = getCurrentBranchName();
 
-    log(chalk.blue(`Getting current branch stats...`))
-    await getCurrentBundleStats('current')
+    log(chalk.blue(`Getting ${currentBranch} stats...`))
+    await getCurrentBundleStats('current');
 
-    log(chalk.blue(`checking out target branch ${options.targetBranch}`))
     await doCheckout(options);
 
     try {
-        log(chalk.blue(`getting ${options.targetBranch} stats...`))
-        await getCurrentBundleStats('base');
+        log(chalk.blue(`Getting ${options.targetBranch} stats...`))
+        await getCurrentBundleStats('target');
         await doCheckout({targetBranch: '-'});
 
     } catch (err) {
@@ -34,7 +35,7 @@ export default async function main(options: any) {
     }
 
     log(chalk.blue(`Comparing stats...`))
-    await compareStats('bba/base-stats.json', 'bba/current-stats.json');
-
+    const bundlesStatReport = compareStats(`bba/${options.targetBranch}-stats.json`, `bba/${currentBranch}-stats.json`);
+    logStats(bundlesStatReport);
 
 }

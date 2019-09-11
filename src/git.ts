@@ -1,6 +1,8 @@
 
 import * as inquirer from 'inquirer';
 import chalk from 'chalk';
+import * as fs from 'fs';
+import * as path from 'path'
 import * as simplegit from 'simple-git/promise';
 
 const log = console.log;
@@ -57,4 +59,15 @@ export async function doCheckout(options: any){
         }
     }
 
+}
+
+
+export function getCurrentBranchName(p = process.cwd()): string {
+    const gitHeadPath = `${p}/.git/HEAD`;
+  
+    return fs.existsSync(p) ?
+        fs.existsSync(gitHeadPath) ?
+            fs.readFileSync(gitHeadPath, 'utf-8').trim().split('/')[2] :
+            getCurrentBranchName(path.resolve(p, '..')) :
+        ''
 }
