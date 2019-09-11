@@ -6,6 +6,7 @@ import { compareStats } from './compareStats';
 import { doCheckout, getCurrentBranchName } from './git';
 import { logStats } from './logStat';
 import { OptionsI } from './types';
+import ora from 'ora';
 
 const log = console.log;
 const cwd = process.cwd();
@@ -17,23 +18,26 @@ export async function main(options: OptionsI) {
   } catch (e) {}
   const currentBranch = getCurrentBranchName();
 
-  log(chalk.blue(`Getting ${currentBranch} stats...`));
+  const spinner = ora(`Getting ${currentBranch} stats...`).start();
+
+
   await getCurrentBundleStats('current');
 
   await doCheckout(options);
 
   try {
-    log(chalk.blue(`Getting ${options.targetBranch} stats...`));
+    spinner.text = `Getting ${options.targetBranch} stats...`;
     await getCurrentBundleStats('target');
     await doCheckout({ ...options, targetBranch: '-' });
   } catch (err) {
     throw new Error(err);
   }
 
-  log(chalk.blue(`Comparing stats...`));
+  spinner.text = `Comparing stats...`;
   const bundlesStatReport = compareStats(
     `bba/${options.targetBranch}-stats.json`,
     `bba/${currentBranch}-stats.json`
   );
+  spinner.stop()
   logStats(bundlesStatReport);
 }

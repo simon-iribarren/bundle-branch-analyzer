@@ -36,7 +36,7 @@ const errorOnCheckoutQuestion = [
 
 export async function doCheckout(options: OptionsI) {
   try {
-    log(chalk.blue(`checking out target branch ${options.targetBranch}`));
+    //log(chalk.blue(`checking out target branch ${options.targetBranch}`));
     await git.checkout(options.targetBranch);
   } catch (err) {
     const answer = await inquirer.prompt(errorOnCheckoutQuestion);
