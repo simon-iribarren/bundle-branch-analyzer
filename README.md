@@ -1,4 +1,4 @@
-# Bundle Branch Analyzer
+# Bundle Branch Analyzer (Beta)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![Code Style: Google](https://img.shields.io/badge/code%20style-google-blueviolet.svg)](https://github.com/google/gts)
 
@@ -32,3 +32,5 @@ npm install -g bundle-branch-analyzer
 # License
 
 MIT © Simón Iribarren Godoy
+
+Any suggestion or collaborations are very welcome! (simon.ig13@gmail.com)
