@@ -13,10 +13,12 @@ export async function getCurrentBundleStats(filePrefix: string) {
       execOpts
     );
   } catch (err) {
+    console.log('');
     console.log(
       chalk.red(
         `The following error ocurre while running your webpack configuration:`
       )
     );
+    console.error(err);
   }
 }

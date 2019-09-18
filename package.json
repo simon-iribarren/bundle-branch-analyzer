@@ -1,6 +1,6 @@
 {
   "name": "bundle-branch-analyzer",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A CLI tool to analyze and compare bundle size from different branches",
   "main": "build/src/index.js",
   "types": "build/src/index.d.ts",
@@ -24,9 +24,7 @@
     "clean": "gts clean",
     "compile": "tsc -p .",
     "fix": "gts fix",
-    "prepare": "npm.cmd run compile",
-    "pretest": "npm.cmd run compile",
-    "posttest": "npm.cmd run check"
+    "prepare": "npm.cmd run compile"
   },
   "devDependencies": {
     "@types/node": "^10.14.17",
