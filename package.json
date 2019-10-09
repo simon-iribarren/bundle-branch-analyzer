@@ -1,9 +1,13 @@
 {
   "name": "bundle-branch-analyzer",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "A CLI tool to analyze and compare bundle size from different branches",
   "main": "build/src/index.js",
   "types": "build/src/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Simonig/bundle-branch-analyzer"
+  },
   "files": [
     "build/src",
     "build/bin"

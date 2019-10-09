@@ -4,7 +4,6 @@ import chalk from 'chalk';
 import { getCurrentBundleStats } from './getCurrentBundleStats';
 import { compareStats } from './compareStats';
 import { doCheckout, getCurrentBranchName } from './git';
-import { logStats } from './logStat';
 import { OptionsI } from './types';
 import ora from 'ora';
 import { resultPrompt } from './resultPrompt';
