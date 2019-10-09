@@ -7,7 +7,7 @@ const execOpts = { log: false };
 export async function getCurrentBundleStats(filePrefix: string) {
   try {
     const currentBranch = getCurrentBranchName() || filePrefix;
-    await exec('npm install', execOpts);
+    await exec('yarn install', execOpts);
     await exec(
       `webpack --profile --json > bba/${currentBranch}-stats.json`,
       execOpts
