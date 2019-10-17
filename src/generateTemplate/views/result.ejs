@@ -6,8 +6,27 @@
 <body class="container">
 
     <main>
-        <%- include('table', {stats: bundleReport.biggerInCurrent, title: "Bigger in current branch"}); %>
-        <%- include('table', {stats: bundleReport.smallerInCurrent, title: "Smaller in current branch"}); %>
+        <% if(bundleReport.biggerInCurrent.length > 0) { %>
+            <%- include('table', {stats: bundleReport.biggerInCurrent, title: "Bigger in current branch"}); %>
+        <% } %>
+
+        <% if(bundleReport.onlyInCurrent.length > 0) { %>
+            <%- include('table', {stats: bundleReport.onlyInCurrent, title: "Only in Current Branch"}); %>
+        <% } %>
+
+        <% if(bundleReport.smallerInCurrent.length > 0) { %>
+            <%- include('table', {stats: bundleReport.smallerInCurrent, title: "Smaller in current branch"}); %>
+        <% } %>
+
+        <% if(bundleReport.onlyInTarget.length > 0) { %>
+            <%- include('table', {stats: bundleReport.onlyInCurrent, title: "Only in target branch"}); %>
+        <% } %>
+
+        <% if(bundleReport.equal.length > 0) { %>
+            <%- include('table', {stats: bundleReport.equal, title: "Equal in both branches"}); %>
+        <% } %>
+
+
     </main>
 
 </body>

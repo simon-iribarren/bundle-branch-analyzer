@@ -1,23 +1,25 @@
 <h2><%= title %></h2>
-<table>
-        <thead>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Bundle Name</th>
+            <th scope="col">Target Branch Size</th>
+            <th scope="col">Current Branch Size</th>
+            <th scope="col">Difference (Kbs)</th>
+            <th scope="col">Difference (%)</th>
+        </tr>
+    </thead>
+    
+    <tbody>
+        <% stats.forEach(function(stat) { %>
             <tr>
-                <th scope="col">Bundle Name</th>
-                <th scope="col">Target Branch Size</th>
-                <th scope="col">Current Branch Size</th>
-                <th scope="col">Difference (Kbs)</th>
-                <th scope="col">Difference (%)</th>
-              </tr>
-            </thead>
-            <tbody>
-                <% stats.forEach(function(stat) { %>
-                    <tr>
-                        <th><%= stat.name %></th>
-                        <th><%= stat.targetSize %></th>
-                        <th><%= stat.currentSize %></th>
-                        <th><%= stat.difference %></th>
-                        <th><%= stat.pdiff %></th>
-                    </tr>
-                <% }); %>
-            </tbody>
-    </table>
+                <th><%= stat.name %></th>
+                <th><%= stat.targetSize.toFixed(2) %>Kbs</th>
+                <th><%= stat.currentSize.toFixed(2) %>Kbs</th>
+                <th><%= stat.difference.toFixed(2) %>Kbs</th>
+                <th><%= stat.pdiff.toFixed(2) %>%</th>
+            </tr>
+        <% }); %>
+    </tbody>
+</table>

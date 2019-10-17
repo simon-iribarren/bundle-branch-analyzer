@@ -27,12 +27,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "check": "gts check",
     "clean": "gts clean",
-    "compile": "tsc -p .",
+    "compile": "tsc -p . && npm.cmd run copy",
     "fix": "gts fix",
+    "copy": "copyfiles **/*.ejs build/",
     "prepare": "npm.cmd run compile"
   },
   "devDependencies": {
     "@types/node": "^10.14.17",
+    "copyfiles": "^2.1.1",
     "gts": "^1.1.0",
     "typescript": "~3.5.0"
   },
