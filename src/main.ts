@@ -38,5 +38,5 @@ export async function main(options: OptionsI) {
     `bba/${currentBranch}-stats.json`
   );
   spinner.stop();
-  resultPrompt(bundlesStatReport);  
+  resultPrompt(bundlesStatReport);
 }
