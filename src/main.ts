@@ -4,9 +4,9 @@ import chalk from 'chalk';
 import { getCurrentBundleStats } from './getCurrentBundleStats';
 import { compareStats } from './compareStats';
 import { doCheckout, getCurrentBranchName } from './git';
-import { logStats } from './logStat';
 import { OptionsI } from './types';
 import ora from 'ora';
+import { resultPrompt } from './resultPrompt';
 
 const log = console.log;
 const cwd = process.cwd();
@@ -19,7 +19,6 @@ export async function main(options: OptionsI) {
   const currentBranch = getCurrentBranchName();
 
   const spinner = ora(`Getting ${currentBranch} stats...`).start();
-
 
   await getCurrentBundleStats('current');
 
@@ -38,6 +37,6 @@ export async function main(options: OptionsI) {
     `bba/${options.targetBranch}-stats.json`,
     `bba/${currentBranch}-stats.json`
   );
-  spinner.stop()
-  logStats(bundlesStatReport);
+  spinner.stop();
+  resultPrompt(bundlesStatReport);
 }

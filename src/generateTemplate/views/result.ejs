@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<body class="container">
+
+    <main>
+        <% if(bundleReport.biggerInCurrent.length > 0) { %>
+            <%- include('table', {stats: bundleReport.biggerInCurrent, title: "Bigger in current branch"}); %>
+        <% } %>
+
+        <% if(bundleReport.onlyInCurrent.length > 0) { %>
+            <%- include('table', {stats: bundleReport.onlyInCurrent, title: "Only in Current Branch"}); %>
+        <% } %>
+
+        <% if(bundleReport.smallerInCurrent.length > 0) { %>
+            <%- include('table', {stats: bundleReport.smallerInCurrent, title: "Smaller in current branch"}); %>
+        <% } %>
+
+        <% if(bundleReport.onlyInTarget.length > 0) { %>
+            <%- include('table', {stats: bundleReport.onlyInCurrent, title: "Only in target branch"}); %>
+        <% } %>
+
+        <% if(bundleReport.equal.length > 0) { %>
+            <%- include('table', {stats: bundleReport.equal, title: "Equal in both branches"}); %>
+        <% } %>
+
+
+    </main>
+
+</body>
+</html>
