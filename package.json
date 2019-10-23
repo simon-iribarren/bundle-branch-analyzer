@@ -15,7 +15,10 @@
   "license": "Apache-2.0",
   "keywords": [
     "cli",
-    "bundle-branch-analyzer"
+    "bundle-branch-analyzer",
+    "bundle",
+    "bundle size",
+    "compare bundle"
   ],
   "publishConfig": {
     "access": "public"

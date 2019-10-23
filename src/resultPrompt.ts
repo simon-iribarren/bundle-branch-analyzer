@@ -1,4 +1,4 @@
-import { BundlesReportI } from './types';
+import { BundlesReportI, OptionsI } from './types';
 import inquirer = require('inquirer');
 import { logStats } from './logStat';
 import { runResultExpress, generateStaticHtml } from './generateTemplate';
@@ -28,7 +28,8 @@ const resultPromptOpts = [
 ];
 
 export async function resultPrompt(
-  bundleReport: BundlesReportI
+  bundleReport: BundlesReportI,
+  options: OptionsI
 ): Promise<void> {
   const answer = await inquirer.prompt(resultPromptOpts);
 
@@ -39,12 +40,12 @@ export async function resultPrompt(
     }
     case 'html': {
       //GenerateHTML function
-      generateStaticHtml(bundleReport);
+      generateStaticHtml(bundleReport, options);
       return;
     }
     case 'browser': {
       //Generate HTML and serve.
-      runResultExpress(bundleReport);
+      runResultExpress(bundleReport, options);
       return;
     }
     default:

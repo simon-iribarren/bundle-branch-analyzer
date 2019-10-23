@@ -16,7 +16,10 @@ export async function main(options: OptionsI) {
   try {
     await mkDir(`${cwd}/bba`);
   } catch (e) {}
+
   const currentBranch = getCurrentBranchName();
+
+  options.currentBranch = currentBranch;
 
   const spinner = ora(`Getting ${currentBranch} stats...`).start();
 
@@ -38,5 +41,5 @@ export async function main(options: OptionsI) {
     `bba/${currentBranch}-stats.json`
   );
   spinner.stop();
-  resultPrompt(bundlesStatReport);
+  resultPrompt(bundlesStatReport, options);
 }

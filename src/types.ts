@@ -19,6 +19,7 @@ export interface BundlesReportI {
 export interface OptionsI {
   targetBranch: string;
   skipPrompts: boolean;
+  currentBranch?: string;
 }
 
 export interface AssetI {
