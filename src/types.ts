@@ -20,6 +20,8 @@ export interface OptionsI {
   targetBranch: string;
   skipPrompts: boolean;
   currentBranch?: string;
+  packageManager?: string;
+  webpackConfigDir?: string;
 }
 
 export interface AssetI {
