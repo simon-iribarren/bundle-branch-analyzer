@@ -1,33 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 <body class="container">
 
     <main>
-        <% if(bundleReport.biggerInCurrent.length > 0) { %>
-            <%- include('table', {stats: bundleReport.biggerInCurrent, title: "Bigger in current branch"}); %>
-        <% } %>
+        <div class="container">
 
-        <% if(bundleReport.onlyInCurrent.length > 0) { %>
-            <%- include('table', {stats: bundleReport.onlyInCurrent, title: "Only in Current Branch"}); %>
-        <% } %>
+            <h1 style="margin: 30px 0 10px;">Bundle Comparison </h1>
+            <h4 style="margin-bottom: 30px;font-size: 18px;">
+                The branch "<%= options.currentBranch %>" has <%= bundleReport.totalDiff.toFixed(2) %>Kbs
+                (<%= bundleReport.totalPercentage.toFixed(2) %>%) <%= bundleReport.totalDiff > 0 ? "more" : "less" %>
+                than "<%= options.targetBranch %>" branch
+            </h4>
 
-        <% if(bundleReport.smallerInCurrent.length > 0) { %>
-            <%- include('table', {stats: bundleReport.smallerInCurrent, title: "Smaller in current branch"}); %>
-        <% } %>
+            <% if(bundleReport.biggerInCurrent.length > 0) { %>
+            <%- include('table', {stats: bundleReport.biggerInCurrent, title: "Bigger in " + options.currentBranch}); %>
+            <% } %>
 
-        <% if(bundleReport.onlyInTarget.length > 0) { %>
-            <%- include('table', {stats: bundleReport.onlyInCurrent, title: "Only in target branch"}); %>
-        <% } %>
+            <% if(bundleReport.onlyInCurrent.length > 0) { %>
+            <%- include('table', {stats: bundleReport.onlyInCurrent, title: "Only in " + options.currentBranch}); %>
+            <% } %>
 
-        <% if(bundleReport.equal.length > 0) { %>
+            <% if(bundleReport.smallerInCurrent.length > 0) { %>
+            <%- include('table', {stats: bundleReport.smallerInCurrent, title: "Smaller in " + options.currentBranch}); %>
+            <% } %>
+
+            <% if(bundleReport.onlyInTarget.length > 0) { %>
+            <%- include('table', {stats: bundleReport.onlyInTarget, options, title: "Only in " + options.targetBranch}); %>
+            <% } %>
+
+            <% if(bundleReport.equal.length > 0) { %>
             <%- include('table', {stats: bundleReport.equal, title: "Equal in both branches"}); %>
-        <% } %>
+            <% } %>
 
-
+        </div>
     </main>
 
 </body>
+
 </html>

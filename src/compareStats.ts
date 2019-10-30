@@ -12,7 +12,7 @@ function assetsReducer(
 
 function formatAssets(current = 0, target = 0, name: string): BundleStatI {
   const diff = current - target;
-  const percentage = (1 - current / target) * 100;
+  const percentage = (1 - target / current) * 100;
 
   return {
     name,

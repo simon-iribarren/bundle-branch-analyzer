@@ -25,6 +25,7 @@ async function promptForMissingOptions(options: OptionsI): Promise<OptionsI> {
   return {
     ...options,
     targetBranch: options.targetBranch || answers.targetBranch,
+    packageManager: 'npm',
   };
 }
 

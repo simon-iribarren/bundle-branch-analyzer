@@ -7,6 +7,7 @@ import { doCheckout, getCurrentBranchName } from './git';
 import { OptionsI } from './types';
 import ora from 'ora';
 import { resultPrompt } from './resultPrompt';
+import { initialEnviromentCheck } from './envCheck';
 
 const log = console.log;
 const cwd = process.cwd();
@@ -16,18 +17,19 @@ export async function main(options: OptionsI) {
   try {
     await mkDir(`${cwd}/bba`);
   } catch (e) {}
-  const currentBranch = getCurrentBranchName();
 
-  const spinner = ora(`Getting ${currentBranch} stats...`).start();
+  initialEnviromentCheck(options);
 
-  await getCurrentBundleStats('current');
+  const spinner = ora(`Getting ${options.currentBranch} stats...`).start();
 
-  await doCheckout(options);
+  await getCurrentBundleStats('current', options);
+
+  await doCheckout(options.targetBranch);
 
   try {
     spinner.text = `Getting ${options.targetBranch} stats...`;
-    await getCurrentBundleStats('target');
-    await doCheckout({ ...options, targetBranch: '-' });
+    await getCurrentBundleStats('target', options);
+    await doCheckout('-');
   } catch (err) {
     throw new Error(err);
   }
@@ -35,8 +37,8 @@ export async function main(options: OptionsI) {
   spinner.text = `Comparing stats...`;
   const bundlesStatReport = compareStats(
     `bba/${options.targetBranch}-stats.json`,
-    `bba/${currentBranch}-stats.json`
+    `bba/${options.currentBranch}-stats.json`
   );
   spinner.stop();
-  resultPrompt(bundlesStatReport);
+  resultPrompt(bundlesStatReport, options);
 }

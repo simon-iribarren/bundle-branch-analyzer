@@ -34,10 +34,10 @@ const errorOnCheckoutQuestion = [
   },
 ];
 
-export async function doCheckout(options: OptionsI) {
+export async function doCheckout(targetBranch: string) {
   try {
     //log(chalk.blue(`checking out target branch ${options.targetBranch}`));
-    await git.checkout(options.targetBranch);
+    await git.checkout(targetBranch);
   } catch (err) {
     const answer = await inquirer.prompt(errorOnCheckoutQuestion);
 
@@ -45,11 +45,11 @@ export async function doCheckout(options: OptionsI) {
       case 'stash': {
         log(chalk.blue(`Stashing changes...`));
         await git.stash();
-        await doCheckout(options);
+        await doCheckout(targetBranch);
         return;
       }
       case 'retry': {
-        await doCheckout(options);
+        await doCheckout(targetBranch);
         return;
       }
       default: {
