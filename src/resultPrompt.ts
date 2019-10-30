@@ -9,11 +9,11 @@ const resultOptions = [
     value: 'log',
   },
   {
-    name: `Generate HTML file.`,
+    name: `Generate static HTML file.`,
     value: 'html',
   },
   {
-    name: `Display on browser`,
+    name: `Open in browser`,
     value: 'browser',
   },
 ];

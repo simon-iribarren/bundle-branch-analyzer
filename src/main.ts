@@ -24,12 +24,12 @@ export async function main(options: OptionsI) {
 
   await getCurrentBundleStats('current', options);
 
-  await doCheckout(options);
+  await doCheckout(options.targetBranch);
 
   try {
     spinner.text = `Getting ${options.targetBranch} stats...`;
     await getCurrentBundleStats('target', options);
-    await doCheckout({ ...options, targetBranch: '-' });
+    await doCheckout('-');
   } catch (err) {
     throw new Error(err);
   }

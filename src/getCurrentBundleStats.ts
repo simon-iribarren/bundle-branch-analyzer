@@ -5,7 +5,10 @@ import { OptionsI } from './types';
 const exec = require('await-exec');
 const execOpts = { log: false };
 
-export async function getCurrentBundleStats(filePrefix: string, options: OptionsI) {
+export async function getCurrentBundleStats(
+  filePrefix: string,
+  options: OptionsI
+) {
   try {
     const currentBranch = getCurrentBranchName() || filePrefix;
     await exec(`${options.packageManager} install`, execOpts);
