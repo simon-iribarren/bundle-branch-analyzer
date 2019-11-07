@@ -14,7 +14,10 @@ export function hasYarn(p = process.cwd(), count = 0): boolean {
     : false;
 }
 
-export function webpackConfigFound(p = process.cwd()): boolean {
-  const webpackPath = path.join(p, 'webpack.config.js');
+export function webpackConfigFound(
+  filePath = 'webpack.config.js',
+  p = process.cwd()
+): boolean {
+  const webpackPath = path.join(p, filePath);
   return fs.existsSync(webpackPath);
 }

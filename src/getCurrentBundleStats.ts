@@ -12,10 +12,18 @@ export async function getCurrentBundleStats(
   try {
     const currentBranch = getCurrentBranchName() || filePrefix;
     await exec(`${options.packageManager} install`, execOpts);
-    await exec(
-      `webpack --profile --json > bba/${currentBranch}-stats.json`,
-      execOpts
-    );
+
+    if (options.webpackConfigScript.length > 0) {
+      await exec(
+        `webpack --config ${options.webpackConfigScript} --profile --json > bba/${currentBranch}-stats.json`,
+        execOpts
+      );
+    } else {
+      await exec(
+        `webpack --profile --json > bba/${currentBranch}-stats.json`,
+        execOpts
+      );
+    }
   } catch (err) {
     console.log('');
     console.log(
