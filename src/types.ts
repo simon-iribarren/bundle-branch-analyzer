@@ -1,3 +1,5 @@
+import { ResultTypes } from "./enums";
+
 export interface BundleStatI {
   name: string;
   targetSize: number;
@@ -23,6 +25,7 @@ export interface OptionsI {
   currentBranch?: string;
   packageManager?: string;
   webpackConfigDir?: string;
+  output: string | null;
 }
 
 export interface AssetI {

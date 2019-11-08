@@ -2,6 +2,7 @@ import { BundlesReportI, OptionsI } from './types';
 import inquirer = require('inquirer');
 import { logStats } from './logStat';
 import { runResultExpress, generateStaticHtml } from './generateTemplate';
+import { ResultTypes } from './enums';
 
 const resultOptions = [
   {
@@ -31,19 +32,25 @@ export async function resultPrompt(
   bundleReport: BundlesReportI,
   options: OptionsI
 ): Promise<void> {
-  const answer = await inquirer.prompt(resultPromptOpts);
+  let answer;
+
+  if (options.output) {
+    answer = { type: options.output };
+  } else {
+    answer = await inquirer.prompt(resultPromptOpts);
+  }
 
   switch (answer.type) {
-    case 'log': {
+    case ResultTypes.LOG: {
       logStats(bundleReport);
       return;
     }
-    case 'html': {
+    case ResultTypes.HTML: {
       //GenerateHTML function
       generateStaticHtml(bundleReport, options);
       return;
     }
-    case 'browser': {
+    case ResultTypes.BROWSER: {
       //Generate HTML and serve.
       runResultExpress(bundleReport, options);
       return;

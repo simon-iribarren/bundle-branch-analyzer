@@ -1,10 +1,16 @@
 import { OptionsI } from './types';
 import { getCurrentBranchName } from './git';
 import { hasYarn, webpackConfigFound } from './utils';
+import { ResultTypes } from './enums';
 
 export function initialEnviromentCheck(options: OptionsI) {
   options.currentBranch = getCurrentBranchName();
   options.packageManager = hasYarn() ? 'yarn' : 'npm';
+  const output = options.output;
+
+  if (output && output !== ResultTypes.BROWSER && output !== ResultTypes.HTML && output !== ResultTypes.LOG) {
+    throw new TypeError(`output type ${output} is not valid, please choose between 'log', 'html' or 'browser'`)
+  }
 
   if (
     options.webpackConfigScript.length > 0 &&
