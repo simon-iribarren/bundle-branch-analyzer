@@ -1,3 +1,5 @@
+import { ResultTypes } from './enums';
+
 export interface BundleStatI {
   name: string;
   targetSize: number;
@@ -19,9 +21,11 @@ export interface BundlesReportI {
 export interface OptionsI {
   targetBranch: string;
   skipPrompts: boolean;
+  webpackConfigScript: string;
   currentBranch?: string;
   packageManager?: string;
   webpackConfigDir?: string;
+  mode: string | null;
 }
 
 export interface AssetI {

@@ -1,6 +1,6 @@
 {
   "name": "bundle-branch-analyzer",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "A CLI tool to analyze and compare bundle size from different branches",
   "main": "build/src/index.js",
   "types": "build/src/index.d.ts",

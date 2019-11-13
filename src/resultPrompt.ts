@@ -2,19 +2,20 @@ import { BundlesReportI, OptionsI } from './types';
 import inquirer = require('inquirer');
 import { logStats } from './logStat';
 import { runResultExpress, generateStaticHtml } from './generateTemplate';
+import { ResultTypes } from './enums';
 
 const resultOptions = [
   {
-    name: `Log results`,
-    value: 'log',
+    name: `Show the report in the console`,
+    value: 'console',
   },
   {
-    name: `Generate static HTML file.`,
-    value: 'html',
+    name: `Generate static HTML file with the bundle report.`,
+    value: 'static',
   },
   {
-    name: `Open in browser`,
-    value: 'browser',
+    name: `Start HTTP server to show the bundle report in the browser`,
+    value: 'server',
   },
 ];
 
@@ -31,19 +32,25 @@ export async function resultPrompt(
   bundleReport: BundlesReportI,
   options: OptionsI
 ): Promise<void> {
-  const answer = await inquirer.prompt(resultPromptOpts);
+  let answer;
+
+  if (options.mode) {
+    answer = { type: options.mode };
+  } else {
+    answer = await inquirer.prompt(resultPromptOpts);
+  }
 
   switch (answer.type) {
-    case 'log': {
+    case ResultTypes.CONSOLE: {
       logStats(bundleReport);
       return;
     }
-    case 'html': {
+    case ResultTypes.STATIC: {
       //GenerateHTML function
       generateStaticHtml(bundleReport, options);
       return;
     }
-    case 'browser': {
+    case ResultTypes.SERVER: {
       //Generate HTML and serve.
       runResultExpress(bundleReport, options);
       return;
