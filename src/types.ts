@@ -1,4 +1,4 @@
-import { ResultTypes } from "./enums";
+import { ResultTypes } from './enums';
 
 export interface BundleStatI {
   name: string;
@@ -25,7 +25,7 @@ export interface OptionsI {
   currentBranch?: string;
   packageManager?: string;
   webpackConfigDir?: string;
-  output: string | null;
+  mode: string | null;
 }
 
 export interface AssetI {

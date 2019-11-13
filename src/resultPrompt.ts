@@ -6,16 +6,16 @@ import { ResultTypes } from './enums';
 
 const resultOptions = [
   {
-    name: `Log results`,
-    value: 'log',
+    name: `Show the report in the console`,
+    value: 'console',
   },
   {
-    name: `Generate static HTML file.`,
-    value: 'html',
+    name: `Generate static HTML file with the bundle report.`,
+    value: 'static',
   },
   {
-    name: `Open in browser`,
-    value: 'browser',
+    name: `Start HTTP server to show the bundle report in the browser`,
+    value: 'server',
   },
 ];
 
@@ -34,23 +34,23 @@ export async function resultPrompt(
 ): Promise<void> {
   let answer;
 
-  if (options.output) {
-    answer = { type: options.output };
+  if (options.mode) {
+    answer = { type: options.mode };
   } else {
     answer = await inquirer.prompt(resultPromptOpts);
   }
 
   switch (answer.type) {
-    case ResultTypes.LOG: {
+    case ResultTypes.CONSOLE: {
       logStats(bundleReport);
       return;
     }
-    case ResultTypes.HTML: {
+    case ResultTypes.STATIC: {
       //GenerateHTML function
       generateStaticHtml(bundleReport, options);
       return;
     }
-    case ResultTypes.BROWSER: {
+    case ResultTypes.SERVER: {
       //Generate HTML and serve.
       runResultExpress(bundleReport, options);
       return;

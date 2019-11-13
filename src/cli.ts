@@ -34,12 +34,12 @@ function parseArgumentsIntoOptions(rawArgs: string[]) {
     {
       '--targetBranch': String,
       '--webpackConfig': String,
-      '--output': String,
+      '--mode': String,
       '--yes': Boolean,
       '-t': '--targetBranch',
       '-y': '--yes',
       '-wc': '--webpackConfig',
-      '-o': '--output',
+      '-m': '--mode',
     },
     {
       argv: rawArgs.slice(2),
@@ -49,7 +49,7 @@ function parseArgumentsIntoOptions(rawArgs: string[]) {
     skipPrompts: !!args['--yes'] || false,
     targetBranch: args['--targetBranch'] || '',
     webpackConfigScript: args['--webpackConfig'] || '',
-    output: args['--output'] || null,
+    mode: args['--mode'] || null,
   };
 }
 

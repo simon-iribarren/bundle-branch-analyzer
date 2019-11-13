@@ -6,10 +6,17 @@ import { ResultTypes } from './enums';
 export function initialEnviromentCheck(options: OptionsI) {
   options.currentBranch = getCurrentBranchName();
   options.packageManager = hasYarn() ? 'yarn' : 'npm';
-  const output = options.output;
+  const mode = options.mode;
 
-  if (output && output !== ResultTypes.BROWSER && output !== ResultTypes.HTML && output !== ResultTypes.LOG) {
-    throw new TypeError(`output type ${output} is not valid, please choose between 'log', 'html' or 'browser'`)
+  if (
+    mode &&
+    mode !== ResultTypes.SERVER &&
+    mode !== ResultTypes.STATIC &&
+    mode !== ResultTypes.CONSOLE
+  ) {
+    throw new TypeError(
+      `Mode type ${mode} is not valid, please choose between 'console', 'server' or 'static'`
+    );
   }
 
   if (
