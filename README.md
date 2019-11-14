@@ -1,7 +1,7 @@
 # Bundle Branch Analyzer (Beta)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![Code Style: Google](https://img.shields.io/badge/code%20style-google-blueviolet.svg)](https://github.com/google/gts)
-
+[![npm](https://img.shields.io/npm/v/bundle-branch-analyzer.svg?maxAge=2592000)](https://www.npmjs.com/package/bundle-branch-analyzer)
 
 **Compare the bundle size of different branchs in seconds** ✨
 
