@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`cli should parse multiple arguments should keep the options structure 1`] = `
+Object {
+  "mode": "modeArg",
+  "targetBranch": "branch",
+  "webpackConfigScript": "webpackArg",
+}
+`;

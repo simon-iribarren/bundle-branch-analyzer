@@ -4,12 +4,6 @@ import { main } from './main';
 import { OptionsI } from './types';
 
 async function promptForMissingOptions(options: OptionsI): Promise<OptionsI> {
-  if (options.skipPrompts) {
-    return {
-      ...options,
-    };
-  }
-
   const questions = [];
 
   if (!options.targetBranch) {
@@ -29,16 +23,13 @@ async function promptForMissingOptions(options: OptionsI): Promise<OptionsI> {
   };
 }
 
-function parseArgumentsIntoOptions(rawArgs: string[]) {
+export function parseArgumentsIntoOptions(rawArgs: string[]): OptionsI {
   const args = arg(
     {
       '--targetBranch': String,
       '--webpackConfig': String,
       '--mode': String,
-      '--yes': Boolean,
       '-t': '--targetBranch',
-      '-y': '--yes',
-      '-wc': '--webpackConfig',
       '-m': '--mode',
     },
     {
@@ -46,7 +37,6 @@ function parseArgumentsIntoOptions(rawArgs: string[]) {
     }
   );
   return {
-    skipPrompts: !!args['--yes'] || false,
     targetBranch: args['--targetBranch'] || '',
     webpackConfigScript: args['--webpackConfig'] || '',
     mode: args['--mode'] || null,
