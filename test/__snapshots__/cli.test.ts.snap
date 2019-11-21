@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`cli should parse multiple arguments should keep the options structure 1`] = `
+exports[`cli should parse multiple arguments should set the arguments and keep the default values 1`] = `
 Object {
   "mode": "modeArg",
   "targetBranch": "branch",

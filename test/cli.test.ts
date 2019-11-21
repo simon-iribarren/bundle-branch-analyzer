@@ -54,7 +54,7 @@ describe('cli', () => {
             expect(opts2.mode).toBe(opts3.mode)
         })
 
-        it('should keep the options structure', () => {
+        it('should set the arguments and keep the default values', () => {
             const parsedArgs = parseArgumentsIntoOptions([...BASE_ARGS, '-t', 'branch', '--mode', 'modeArg', '--webpackConfig', 'webpackArg'])
             expect(parsedArgs).toMatchSnapshot();
         })
