@@ -20,7 +20,6 @@ export interface BundlesReportI {
 
 export interface OptionsI {
   targetBranch: string;
-  skipPrompts: boolean;
   webpackConfigScript: string;
   currentBranch?: string;
   packageManager?: string;
