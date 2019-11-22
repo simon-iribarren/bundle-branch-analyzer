@@ -28,6 +28,7 @@ export function parseArgumentsIntoOptions(rawArgs: string[]): OptionsI {
     {
       '--targetBranch': String,
       '--webpackConfig': String,
+      '--bundleDir': String,
       '--mode': String,
       '-t': '--targetBranch',
       '-m': '--mode',
@@ -40,6 +41,7 @@ export function parseArgumentsIntoOptions(rawArgs: string[]): OptionsI {
     targetBranch: args['--targetBranch'] || '',
     webpackConfigScript: args['--webpackConfig'] || '',
     mode: args['--mode'] || null,
+    bundleDir: args['--bundleDir'] || 'bba',
   };
 }
 

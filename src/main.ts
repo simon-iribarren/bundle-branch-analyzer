@@ -15,30 +15,27 @@ const mkDir = promisify(fs.mkdir);
 
 export async function main(options: OptionsI) {
   try {
-    await mkDir(`${cwd}/bba`);
+    await mkDir(`${cwd}/${options.bundleDir}`);
   } catch (e) {}
 
   initialEnviromentCheck(options);
 
   const spinner = ora(`Getting ${options.currentBranch} stats...`).start();
 
-  await getCurrentBundleStats('current', options);
+  await getCurrentBundleStats(options);
 
   await doCheckout(options.targetBranch);
 
   try {
     spinner.text = `Getting ${options.targetBranch} stats...`;
-    await getCurrentBundleStats('target', options);
+    await getCurrentBundleStats(options);
     await doCheckout('-');
   } catch (err) {
     throw new Error(err);
   }
 
   spinner.text = `Comparing stats...`;
-  const bundlesStatReport = compareStats(
-    `bba/${options.targetBranch}-stats.json`,
-    `bba/${options.currentBranch}-stats.json`
-  );
+  const bundlesStatReport = compareStats(options);
   spinner.stop();
   resultPrompt(bundlesStatReport, options);
 }

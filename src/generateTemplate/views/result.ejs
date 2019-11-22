@@ -16,6 +16,11 @@
                 than "<%= options.targetBranch %>" branch
             </h4>
 
+            
+            <% if(bundleReport.byEntry.length > 0) { %>
+                <%- include('table', {stats: bundleReport.byEntry, title: "By Entry"}); %>
+            <% } %>
+
             <% if(bundleReport.biggerInCurrent.length > 0) { %>
             <%- include('table', {stats: bundleReport.biggerInCurrent, title: "Bigger in " + options.currentBranch}); %>
             <% } %>
