@@ -12,7 +12,7 @@
             <h1 style="margin: 30px 0 10px;">Bundle Comparison </h1>
             <h4 style="margin-bottom: 30px;font-size: 18px;">
                 The branch "<%= options.currentBranch %>" has <%= bundleReport.totalDiff.toFixed(2) %>Kbs
-                (<%= bundleReport.totalPercentage.toFixed(2) %>%) <%= bundleReport.totalDiff > 0 ? "more" : "less" %>
+                (<%= bundleReport.totalPercentage %>%) <%= bundleReport.totalDiff > 0 ? "more" : "less" %>
                 than "<%= options.targetBranch %>" branch
             </h4>
 
