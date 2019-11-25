@@ -14,6 +14,7 @@ export interface BundlesReportI {
   biggerInCurrent: BundleStatI[];
   smallerInCurrent: BundleStatI[];
   equal: BundleStatI[];
+  byEntry: BundleStatI[];
   totalDiff: number;
   totalPercentage: number;
 }
@@ -25,6 +26,15 @@ export interface OptionsI {
   packageManager?: string;
   webpackConfigDir?: string;
   mode: string | null;
+  outputDir: string;
+}
+
+export interface AssetsByChunkI {
+  [key: string]: string[];
+}
+
+export interface ChunksByAssetI {
+  [key: string]: string;
 }
 
 export interface AssetI {

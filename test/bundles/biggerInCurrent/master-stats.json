@@ -1,0 +1,154 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "4.29.6",
+  "hash": "9add9a515b119758f718",
+  "time": 56185,
+  "builtAt": 1574416668474,
+  "assetsByChunkName": {
+    "beantragenDesktop": [
+      "beantragenDesktop.bundle.desktop.js",
+      "beantragenDesktop.bundle.desktop.js.map"
+    ],
+    "beantragenMobile": [
+      "beantragenMobile.bundle.desktop.js",
+      "beantragenMobile.bundle.desktop.js.map"
+    ],
+    "berechnenDesktop": [
+      "berechnenDesktop.bundle.desktop.js",
+      "berechnenDesktop.bundle.desktop.js.map"
+    ],
+    "berechnenMobile": [
+      "berechnenMobile.bundle.desktop.js",
+      "berechnenMobile.bundle.desktop.js.map"
+    ],
+    "jQuery": [
+      "jQuery.bundle.desktop.js",
+      "jQuery.bundle.desktop.js.map"
+    ]
+  },
+  "assets": [
+
+    {
+      "name": "beantragenDesktop.bundle.desktop.js",
+      "size": 10240,
+      "chunks": [
+        4
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+
+    {
+      "name": "berechnenMobile.bundle.desktop.js",
+      "size": 20480,
+      "chunks": [
+        4
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+
+    {
+      "name": "beantragenMobile.bundle.desktop.js",
+      "size": 20480,
+      "chunks": [
+        4
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "berechnenDesktop.bundle.desktop.js",
+      "size": 20480,
+      "chunks": [
+        4
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "jQuery.bundle.desktop.js",
+      "size": 20480,
+      "chunks": [
+        4
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "jQuery.bundle.desktop.js.map",
+      "size": 411180,
+      "chunks": [
+        4
+      ],
+      "chunkNames": [],
+      "emitted": true
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "berechnenMobile": {
+      "chunks": [
+        3
+      ],
+      "assets": [
+        "berechnenMobile.bundle.desktop.js",
+        "berechnenMobile.bundle.desktop.js.map"
+      ],
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": true
+    },
+    "berechnenDesktop": {
+      "chunks": [
+        2
+      ],
+      "assets": [
+        "berechnenDesktop.bundle.desktop.js",
+        "berechnenDesktop.bundle.desktop.js.map"
+      ],
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": true
+    },
+    "beantragenMobile": {
+      "chunks": [
+        1
+      ],
+      "assets": [
+        "beantragenMobile.bundle.desktop.js",
+        "beantragenMobile.bundle.desktop.js.map"
+      ],
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": true
+    },
+    "beantragenDesktop": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "beantragenDesktop.bundle.desktop.js",
+        "beantragenDesktop.bundle.desktop.js.map"
+      ],
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": true
+    },
+    "jQuery": {
+      "chunks": [
+        4
+      ],
+      "assets": [
+        "jQuery.bundle.desktop.js",
+        "jQuery.bundle.desktop.js.map"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+  },
+  "chunks": []
+}

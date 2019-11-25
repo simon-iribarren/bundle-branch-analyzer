@@ -1,0 +1,2047 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "4.29.6",
+  "hash": "3f93d838df3080720b45",
+  "time": 50071,
+  "builtAt": 1574416725968,
+  "publicPath": "/einsurance/media/next/",
+  "outputPath": "C:\\project\\einsurance\\kfzdialog\\next\\dist\\next",
+  "assetsByChunkName": {
+    "antragNext": [
+      "antragNext.bundle.desktop.js",
+      "antragNext.bundle.desktop.js.map"
+    ],
+    "jQuery": [
+      "jQuery.bundle.desktop.js",
+      "jQuery.bundle.desktop.js.map"
+    ],
+    "nextDialog": [
+      "nextDialog.bundle.desktop.js",
+      "nextDialog.bundle.desktop.js.map"
+    ],
+    "onePageBerechnung": [
+      "onePageBerechnung.bundle.desktop.js",
+      "onePageBerechnung.bundle.desktop.js.map"
+    ]
+  },
+  "assets": [
+    {
+      "name": "03513e305018f85ed8036fd8378d7882.png",
+      "size": 1399,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "0f742dbdd5d7c4223f13e1478115e43f.png",
+      "size": 9508,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "10.bundle.desktop.js",
+      "size": 2414,
+      "chunks": [
+        10
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "10.bundle.desktop.js.map",
+      "size": 3488,
+      "chunks": [
+        10
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "100.bundle.desktop.js",
+      "size": 4732,
+      "chunks": [
+        100
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "100.bundle.desktop.js.map",
+      "size": 5995,
+      "chunks": [
+        100
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "101.bundle.desktop.js",
+      "size": 4694,
+      "chunks": [
+        101
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "101.bundle.desktop.js.map",
+      "size": 5975,
+      "chunks": [
+        101
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "102.bundle.desktop.js",
+      "size": 4686,
+      "chunks": [
+        102
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "102.bundle.desktop.js.map",
+      "size": 5963,
+      "chunks": [
+        102
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "11.bundle.desktop.js",
+      "size": 2462,
+      "chunks": [
+        11
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "11.bundle.desktop.js.map",
+      "size": 3614,
+      "chunks": [
+        11
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "11538213fd5df46cbb0dbfe36e813866.png",
+      "size": 3554,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "12.bundle.desktop.js",
+      "size": 2436,
+      "chunks": [
+        12
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "12.bundle.desktop.js.map",
+      "size": 3393,
+      "chunks": [
+        12
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "13.bundle.desktop.js",
+      "size": 4377,
+      "chunks": [
+        13
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "13.bundle.desktop.js.map",
+      "size": 5841,
+      "chunks": [
+        13
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "14.bundle.desktop.js",
+      "size": 11637,
+      "chunks": [
+        14
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "14.bundle.desktop.js.map",
+      "size": 12915,
+      "chunks": [
+        14
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "15.bundle.desktop.js",
+      "size": 8336,
+      "chunks": [
+        15
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "15.bundle.desktop.js.map",
+      "size": 10026,
+      "chunks": [
+        15
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "16.bundle.desktop.js",
+      "size": 2292,
+      "chunks": [
+        16
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "16.bundle.desktop.js.map",
+      "size": 3697,
+      "chunks": [
+        16
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "17.bundle.desktop.js",
+      "size": 11581,
+      "chunks": [
+        17
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "17.bundle.desktop.js.map",
+      "size": 12797,
+      "chunks": [
+        17
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "18.bundle.desktop.js",
+      "size": 7096,
+      "chunks": [
+        18
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "18.bundle.desktop.js.map",
+      "size": 10055,
+      "chunks": [
+        18
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "19.bundle.desktop.js",
+      "size": 7614,
+      "chunks": [
+        19
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "19.bundle.desktop.js.map",
+      "size": 9413,
+      "chunks": [
+        19
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "20.bundle.desktop.js",
+      "size": 4068,
+      "chunks": [
+        20
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "20.bundle.desktop.js.map",
+      "size": 4896,
+      "chunks": [
+        20
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "21.bundle.desktop.js",
+      "size": 12636,
+      "chunks": [
+        21
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "21.bundle.desktop.js.map",
+      "size": 14677,
+      "chunks": [
+        21
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "22.bundle.desktop.js",
+      "size": 6282,
+      "chunks": [
+        22
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "22.bundle.desktop.js.map",
+      "size": 8557,
+      "chunks": [
+        22
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "23.bundle.desktop.js",
+      "size": 10509,
+      "chunks": [
+        23
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "23.bundle.desktop.js.map",
+      "size": 11927,
+      "chunks": [
+        23
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "24.bundle.desktop.js",
+      "size": 10048,
+      "chunks": [
+        24
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "24.bundle.desktop.js.map",
+      "size": 11435,
+      "chunks": [
+        24
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "25.bundle.desktop.js",
+      "size": 10972,
+      "chunks": [
+        25
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "25.bundle.desktop.js.map",
+      "size": 11980,
+      "chunks": [
+        25
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "26.bundle.desktop.js",
+      "size": 4096,
+      "chunks": [
+        26
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "26.bundle.desktop.js.map",
+      "size": 5390,
+      "chunks": [
+        26
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "27.bundle.desktop.js",
+      "size": 3369,
+      "chunks": [
+        27
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "27.bundle.desktop.js.map",
+      "size": 4645,
+      "chunks": [
+        27
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "28.bundle.desktop.js",
+      "size": 9497,
+      "chunks": [
+        28
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "28.bundle.desktop.js.map",
+      "size": 13409,
+      "chunks": [
+        28
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "29.bundle.desktop.js",
+      "size": 1287,
+      "chunks": [
+        29
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "29.bundle.desktop.js.map",
+      "size": 2224,
+      "chunks": [
+        29
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "30.bundle.desktop.js",
+      "size": 2492,
+      "chunks": [
+        30
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "30.bundle.desktop.js.map",
+      "size": 3378,
+      "chunks": [
+        30
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "31.bundle.desktop.js",
+      "size": 1625,
+      "chunks": [
+        31
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "31.bundle.desktop.js.map",
+      "size": 2971,
+      "chunks": [
+        31
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "32.bundle.desktop.js",
+      "size": 4464,
+      "chunks": [
+        32
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "32.bundle.desktop.js.map",
+      "size": 5320,
+      "chunks": [
+        32
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "33.bundle.desktop.js",
+      "size": 233429,
+      "chunks": [
+        33
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "33.bundle.desktop.js.map",
+      "size": 235262,
+      "chunks": [
+        33
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "34.bundle.desktop.js",
+      "size": 3716,
+      "chunks": [
+        34
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "34.bundle.desktop.js.map",
+      "size": 4617,
+      "chunks": [
+        34
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "35.bundle.desktop.js",
+      "size": 1621,
+      "chunks": [
+        35
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "35.bundle.desktop.js.map",
+      "size": 2441,
+      "chunks": [
+        35
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "36.bundle.desktop.js",
+      "size": 3209,
+      "chunks": [
+        36
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "36.bundle.desktop.js.map",
+      "size": 4176,
+      "chunks": [
+        36
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "37.bundle.desktop.js",
+      "size": 5365,
+      "chunks": [
+        37
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "37.bundle.desktop.js.map",
+      "size": 6642,
+      "chunks": [
+        37
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "38.bundle.desktop.js",
+      "size": 6310,
+      "chunks": [
+        38
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "38.bundle.desktop.js.map",
+      "size": 8248,
+      "chunks": [
+        38
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "39.bundle.desktop.js",
+      "size": 23682,
+      "chunks": [
+        39
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "39.bundle.desktop.js.map",
+      "size": 25508,
+      "chunks": [
+        39
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "4.bundle.desktop.js",
+      "size": 5419,
+      "chunks": [
+        4
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "4.bundle.desktop.js.map",
+      "size": 7373,
+      "chunks": [
+        4
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "40.bundle.desktop.js",
+      "size": 5810,
+      "chunks": [
+        40
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "40.bundle.desktop.js.map",
+      "size": 6821,
+      "chunks": [
+        40
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "41.bundle.desktop.js",
+      "size": 3383,
+      "chunks": [
+        41
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "41.bundle.desktop.js.map",
+      "size": 4544,
+      "chunks": [
+        41
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "42.bundle.desktop.js",
+      "size": 11373,
+      "chunks": [
+        42
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "42.bundle.desktop.js.map",
+      "size": 16595,
+      "chunks": [
+        42
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "43.bundle.desktop.js",
+      "size": 7643,
+      "chunks": [
+        43
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "43.bundle.desktop.js.map",
+      "size": 8799,
+      "chunks": [
+        43
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "44.bundle.desktop.js",
+      "size": 8698,
+      "chunks": [
+        44
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "44.bundle.desktop.js.map",
+      "size": 10452,
+      "chunks": [
+        44
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "45.bundle.desktop.js",
+      "size": 2214,
+      "chunks": [
+        45
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "45.bundle.desktop.js.map",
+      "size": 3366,
+      "chunks": [
+        45
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "46.bundle.desktop.js",
+      "size": 3368,
+      "chunks": [
+        46
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "46.bundle.desktop.js.map",
+      "size": 4862,
+      "chunks": [
+        46
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "47.bundle.desktop.js",
+      "size": 7372,
+      "chunks": [
+        47
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "47.bundle.desktop.js.map",
+      "size": 10806,
+      "chunks": [
+        47
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "48.bundle.desktop.js",
+      "size": 905,
+      "chunks": [
+        48
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "48.bundle.desktop.js.map",
+      "size": 1720,
+      "chunks": [
+        48
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "49.bundle.desktop.js",
+      "size": 4820,
+      "chunks": [
+        49
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "49.bundle.desktop.js.map",
+      "size": 6121,
+      "chunks": [
+        49
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "5.bundle.desktop.js",
+      "size": 1153,
+      "chunks": [
+        5
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "5.bundle.desktop.js.map",
+      "size": 2095,
+      "chunks": [
+        5
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "50.bundle.desktop.js",
+      "size": 10473,
+      "chunks": [
+        50
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "50.bundle.desktop.js.map",
+      "size": 12015,
+      "chunks": [
+        50
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "51.bundle.desktop.js",
+      "size": 1539,
+      "chunks": [
+        51
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "51.bundle.desktop.js.map",
+      "size": 2974,
+      "chunks": [
+        51
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "52.bundle.desktop.js",
+      "size": 4507,
+      "chunks": [
+        52
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "52.bundle.desktop.js.map",
+      "size": 7709,
+      "chunks": [
+        52
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "53.bundle.desktop.js",
+      "size": 3430,
+      "chunks": [
+        53
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "53.bundle.desktop.js.map",
+      "size": 4453,
+      "chunks": [
+        53
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "54.bundle.desktop.js",
+      "size": 5771,
+      "chunks": [
+        54
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "54.bundle.desktop.js.map",
+      "size": 7554,
+      "chunks": [
+        54
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "55.bundle.desktop.js",
+      "size": 7658,
+      "chunks": [
+        55
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "55.bundle.desktop.js.map",
+      "size": 9229,
+      "chunks": [
+        55
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "56.bundle.desktop.js",
+      "size": 5800,
+      "chunks": [
+        56
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "56.bundle.desktop.js.map",
+      "size": 6879,
+      "chunks": [
+        56
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "57.bundle.desktop.js",
+      "size": 2774,
+      "chunks": [
+        57
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "57.bundle.desktop.js.map",
+      "size": 4292,
+      "chunks": [
+        57
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "58.bundle.desktop.js",
+      "size": 2068,
+      "chunks": [
+        58
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "58.bundle.desktop.js.map",
+      "size": 3581,
+      "chunks": [
+        58
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "59.bundle.desktop.js",
+      "size": 62824,
+      "chunks": [
+        59
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "59.bundle.desktop.js.map",
+      "size": 77083,
+      "chunks": [
+        59
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "6.bundle.desktop.js",
+      "size": 5862,
+      "chunks": [
+        6
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "6.bundle.desktop.js.map",
+      "size": 7346,
+      "chunks": [
+        6
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "60.bundle.desktop.js",
+      "size": 3614,
+      "chunks": [
+        60
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "60.bundle.desktop.js.map",
+      "size": 4430,
+      "chunks": [
+        60
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "61.bundle.desktop.js",
+      "size": 2859,
+      "chunks": [
+        61
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "61.bundle.desktop.js.map",
+      "size": 3675,
+      "chunks": [
+        61
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "62.bundle.desktop.js",
+      "size": 4161,
+      "chunks": [
+        62
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "62.bundle.desktop.js.map",
+      "size": 6939,
+      "chunks": [
+        62
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "63.bundle.desktop.js",
+      "size": 7288,
+      "chunks": [
+        63
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "63.bundle.desktop.js.map",
+      "size": 8934,
+      "chunks": [
+        63
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "64.bundle.desktop.js",
+      "size": 159945,
+      "chunks": [
+        64
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "64.bundle.desktop.js.map",
+      "size": 225906,
+      "chunks": [
+        64
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "65.bundle.desktop.js",
+      "size": 10162,
+      "chunks": [
+        65
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "65.bundle.desktop.js.map",
+      "size": 11152,
+      "chunks": [
+        65
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "66.bundle.desktop.js",
+      "size": 2769,
+      "chunks": [
+        66
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "66.bundle.desktop.js.map",
+      "size": 4114,
+      "chunks": [
+        66
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "67.bundle.desktop.js",
+      "size": 6811,
+      "chunks": [
+        67
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "67.bundle.desktop.js.map",
+      "size": 8361,
+      "chunks": [
+        67
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "68.bundle.desktop.js",
+      "size": 17885,
+      "chunks": [
+        68
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "68.bundle.desktop.js.map",
+      "size": 19838,
+      "chunks": [
+        68
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "69.bundle.desktop.js",
+      "size": 7409,
+      "chunks": [
+        69
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "69.bundle.desktop.js.map",
+      "size": 8870,
+      "chunks": [
+        69
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "7.bundle.desktop.js",
+      "size": 2736,
+      "chunks": [
+        7
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "7.bundle.desktop.js.map",
+      "size": 4899,
+      "chunks": [
+        7
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "70.bundle.desktop.js",
+      "size": 30548,
+      "chunks": [
+        70
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "70.bundle.desktop.js.map",
+      "size": 42662,
+      "chunks": [
+        70
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "71.bundle.desktop.js",
+      "size": 11193,
+      "chunks": [
+        71
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "71.bundle.desktop.js.map",
+      "size": 12094,
+      "chunks": [
+        71
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "72.bundle.desktop.js",
+      "size": 1232,
+      "chunks": [
+        72
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "72.bundle.desktop.js.map",
+      "size": 2791,
+      "chunks": [
+        72
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "73.bundle.desktop.js",
+      "size": 14133,
+      "chunks": [
+        73
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "73.bundle.desktop.js.map",
+      "size": 15221,
+      "chunks": [
+        73
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "74.bundle.desktop.js",
+      "size": 14141,
+      "chunks": [
+        74
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "74.bundle.desktop.js.map",
+      "size": 15266,
+      "chunks": [
+        74
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "75.bundle.desktop.js",
+      "size": 1496,
+      "chunks": [
+        75
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "75.bundle.desktop.js.map",
+      "size": 2521,
+      "chunks": [
+        75
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "76.bundle.desktop.js",
+      "size": 5064,
+      "chunks": [
+        76
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "76.bundle.desktop.js.map",
+      "size": 6130,
+      "chunks": [
+        76
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "77.bundle.desktop.js",
+      "size": 62695,
+      "chunks": [
+        77
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "77.bundle.desktop.js.map",
+      "size": 68314,
+      "chunks": [
+        77
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "78.bundle.desktop.js",
+      "size": 803,
+      "chunks": [
+        78
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "78.bundle.desktop.js.map",
+      "size": 1626,
+      "chunks": [
+        78
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "79.bundle.desktop.js",
+      "size": 4931,
+      "chunks": [
+        79
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "79.bundle.desktop.js.map",
+      "size": 6161,
+      "chunks": [
+        79
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "7fc1dd045b1461132cb2eb9bb4b81b38.png",
+      "size": 22892,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "8.bundle.desktop.js",
+      "size": 5627,
+      "chunks": [
+        8
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "8.bundle.desktop.js.map",
+      "size": 8563,
+      "chunks": [
+        8
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "80.bundle.desktop.js",
+      "size": 41490,
+      "chunks": [
+        80
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "80.bundle.desktop.js.map",
+      "size": 55417,
+      "chunks": [
+        80
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "81.bundle.desktop.js",
+      "size": 2847,
+      "chunks": [
+        81
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "81.bundle.desktop.js.map",
+      "size": 4403,
+      "chunks": [
+        81
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "82.bundle.desktop.js",
+      "size": 2153,
+      "chunks": [
+        82
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "82.bundle.desktop.js.map",
+      "size": 3104,
+      "chunks": [
+        82
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "83.bundle.desktop.js",
+      "size": 2171,
+      "chunks": [
+        83
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "83.bundle.desktop.js.map",
+      "size": 3237,
+      "chunks": [
+        83
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "84.bundle.desktop.js",
+      "size": 3790,
+      "chunks": [
+        84
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "84.bundle.desktop.js.map",
+      "size": 4683,
+      "chunks": [
+        84
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "85.bundle.desktop.js",
+      "size": 5417,
+      "chunks": [
+        85
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "85.bundle.desktop.js.map",
+      "size": 6440,
+      "chunks": [
+        85
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "86.bundle.desktop.js",
+      "size": 14439,
+      "chunks": [
+        86
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "86.bundle.desktop.js.map",
+      "size": 15704,
+      "chunks": [
+        86
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "87.bundle.desktop.js",
+      "size": 11864,
+      "chunks": [
+        87
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "87.bundle.desktop.js.map",
+      "size": 17230,
+      "chunks": [
+        87
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "88.bundle.desktop.js",
+      "size": 4401,
+      "chunks": [
+        88
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "88.bundle.desktop.js.map",
+      "size": 6549,
+      "chunks": [
+        88
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "89.bundle.desktop.js",
+      "size": 6911,
+      "chunks": [
+        89
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "89.bundle.desktop.js.map",
+      "size": 7817,
+      "chunks": [
+        89
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "9.bundle.desktop.js",
+      "size": 6023,
+      "chunks": [
+        9
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "9.bundle.desktop.js.map",
+      "size": 9926,
+      "chunks": [
+        9
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "90.bundle.desktop.js",
+      "size": 6911,
+      "chunks": [
+        90
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "90.bundle.desktop.js.map",
+      "size": 7816,
+      "chunks": [
+        90
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "91.bundle.desktop.js",
+      "size": 14472,
+      "chunks": [
+        91
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "91.bundle.desktop.js.map",
+      "size": 18066,
+      "chunks": [
+        91
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "92.bundle.desktop.js",
+      "size": 2874,
+      "chunks": [
+        92
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "92.bundle.desktop.js.map",
+      "size": 4317,
+      "chunks": [
+        92
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "93.bundle.desktop.js",
+      "size": 2827,
+      "chunks": [
+        93
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "93.bundle.desktop.js.map",
+      "size": 3764,
+      "chunks": [
+        93
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "94.bundle.desktop.js",
+      "size": 4787,
+      "chunks": [
+        94
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "94.bundle.desktop.js.map",
+      "size": 6213,
+      "chunks": [
+        94
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "95.bundle.desktop.js",
+      "size": 12885,
+      "chunks": [
+        95
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "95.bundle.desktop.js.map",
+      "size": 15842,
+      "chunks": [
+        95
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "96.bundle.desktop.js",
+      "size": 14148,
+      "chunks": [
+        96
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "96.bundle.desktop.js.map",
+      "size": 15290,
+      "chunks": [
+        96
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "97.bundle.desktop.js",
+      "size": 4959,
+      "chunks": [
+        97
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "97.bundle.desktop.js.map",
+      "size": 5775,
+      "chunks": [
+        97
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "98.bundle.desktop.js",
+      "size": 12328,
+      "chunks": [
+        98
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "98.bundle.desktop.js.map",
+      "size": 17847,
+      "chunks": [
+        98
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "99.bundle.desktop.js",
+      "size": 7335,
+      "chunks": [
+        99
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "99.bundle.desktop.js.map",
+      "size": 8329,
+      "chunks": [
+        99
+      ],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "antragNext.bundle.desktop.js",
+      "size": 800500,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "antragNext"
+      ],
+      "emitted": true,
+      "isOverSizeLimit": true
+    },
+    {
+      "name": "antragNext.bundle.desktop.js.map",
+      "size": 2290191,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "antragNext"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "d9d137b44dbf4fc2e03c6b6b2a5e6bf7.png",
+      "size": 15623,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "fb3cb784d444ca859c1a210b0416518b.png",
+      "size": 14788,
+      "chunks": [],
+      "chunkNames": [],
+      "emitted": true
+    },
+    {
+      "name": "jQuery.bundle.desktop.js",
+      "size": 85603,
+      "chunks": [
+        1
+      ],
+      "chunkNames": [
+        "jQuery"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "jQuery.bundle.desktop.js.map",
+      "size": 411180,
+      "chunks": [
+        1
+      ],
+      "chunkNames": [
+        "jQuery"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "nextDialog.bundle.desktop.js",
+      "size": 999101,
+      "chunks": [
+        2
+      ],
+      "chunkNames": [
+        "nextDialog"
+      ],
+      "emitted": true,
+      "isOverSizeLimit": true
+    },
+    {
+      "name": "nextDialog.bundle.desktop.js.map",
+      "size": 2842480,
+      "chunks": [
+        2
+      ],
+      "chunkNames": [
+        "nextDialog"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "onePageBerechnung.bundle.desktop.js",
+      "size": 942116,
+      "chunks": [
+        3
+      ],
+      "chunkNames": [
+        "onePageBerechnung"
+      ],
+      "emitted": true,
+      "isOverSizeLimit": true
+    },
+    {
+      "name": "onePageBerechnung.bundle.desktop.js.map",
+      "size": 2739686,
+      "chunks": [
+        3
+      ],
+      "chunkNames": [
+        "onePageBerechnung"
+      ],
+      "emitted": true
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "nextDialog": {
+      "chunks": [
+        2
+      ],
+      "assets": [
+        "nextDialog.bundle.desktop.js",
+        "nextDialog.bundle.desktop.js.map"
+      ],
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": true
+    },
+    "onePageBerechnung": {
+      "chunks": [
+        3
+      ],
+      "assets": [
+        "onePageBerechnung.bundle.desktop.js",
+        "onePageBerechnung.bundle.desktop.js.map"
+      ],
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": true
+    },
+    "antragNext": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "antragNext.bundle.desktop.js",
+        "antragNext.bundle.desktop.js.map"
+      ],
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": true
+    },
+    "jQuery": {
+      "chunks": [
+        1
+      ],
+      "assets": [
+        "jQuery.bundle.desktop.js",
+        "jQuery.bundle.desktop.js.map"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "nextDialog": {
+      "chunks": [
+        2
+      ],
+      "assets": [
+        "nextDialog.bundle.desktop.js",
+        "nextDialog.bundle.desktop.js.map"
+      ],
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": true
+    },
+    "onePageBerechnung": {
+      "chunks": [
+        3
+      ],
+      "assets": [
+        "onePageBerechnung.bundle.desktop.js",
+        "onePageBerechnung.bundle.desktop.js.map"
+      ],
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": true
+    },
+    "antragNext": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "antragNext.bundle.desktop.js",
+        "antragNext.bundle.desktop.js.map"
+      ],
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": true
+    },
+    "jQuery": {
+      "chunks": [
+        1
+      ],
+      "assets": [
+        "jQuery.bundle.desktop.js",
+        "jQuery.bundle.desktop.js.map"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "chunks": [],
+  "filteredModules": 0,
+  "children": []
+}

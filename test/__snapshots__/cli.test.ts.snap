@@ -2,6 +2,7 @@
 
 exports[`cli should parse multiple arguments should set the arguments and keep the default values 1`] = `
 Object {
+  "bundleDir": "bba",
   "mode": "modeArg",
   "targetBranch": "branch",
   "webpackConfigScript": "webpackArg",
