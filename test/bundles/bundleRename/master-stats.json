@@ -1,9 +1,6 @@
 {
   "errors": [],
-  "warnings": [
-    "asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).\nThis can impact web performance.\nAssets: \n  antragNext.bundle.desktop.js (782 KiB)\n  nextDialog.bundle.desktop.js (976 KiB)\n  onePageBerechnung.bundle.desktop.js (920 KiB)",
-    "entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.\nEntrypoints:\n  nextDialog (976 KiB)\n      nextDialog.bundle.desktop.js\n  onePageBerechnung (920 KiB)\n      onePageBerechnung.bundle.desktop.js\n  antragNext (782 KiB)\n      antragNext.bundle.desktop.js\n"
-  ],
+  "warnings": [],
   "version": "4.29.6",
   "hash": "3f93d838df3080720b45",
   "time": 50071,

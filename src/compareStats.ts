@@ -24,7 +24,9 @@ function getPercentage(current: number, target: number): number {
   } else if (target === 0) {
     return -100;
   } else {
-    return (1 - target / current) * 100;
+    const div = target / current;
+    const result = (1 - div) * 100;
+    return Math.round(result);
   }
 }
 
@@ -56,12 +58,12 @@ function getChunksByAsset(chunkNames: AssetsByChunkI): ChunksByAssetI {
 function getStatAssets(options: OptionsI) {
   const targetStatsPath = path.join(
     cwd,
-    options.bundleDir,
+    options.outputDir,
     `${options.targetBranch}-stats.json`
   );
   const currentStatsPath = path.join(
     cwd,
-    options.bundleDir,
+    options.outputDir,
     `${options.currentBranch}-stats.json`
   );
   const currentStats = require(currentStatsPath);

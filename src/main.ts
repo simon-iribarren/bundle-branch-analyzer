@@ -15,7 +15,7 @@ const mkDir = promisify(fs.mkdir);
 
 export async function main(options: OptionsI) {
   try {
-    await mkDir(`${cwd}/${options.bundleDir}`);
+    await mkDir(`${cwd}/${options.outputDir}`);
   } catch (e) {}
 
   initialEnviromentCheck(options);

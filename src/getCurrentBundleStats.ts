@@ -12,12 +12,12 @@ export async function getCurrentBundleStats(options: OptionsI) {
 
     if (options.webpackConfigScript.length > 0) {
       await exec(
-        `webpack --config ${options.webpackConfigScript} --profile --json > ${options.bundleDir}/${currentBranch}-stats.json`,
+        `webpack --config ${options.webpackConfigScript} --profile --json > ${options.outputDir}/${currentBranch}-stats.json`,
         execOpts
       );
     } else {
       await exec(
-        `webpack --profile --json > ${options.bundleDir}/${currentBranch}-stats.json`,
+        `webpack --profile --json > ${options.outputDir}/${currentBranch}-stats.json`,
         execOpts
       );
     }

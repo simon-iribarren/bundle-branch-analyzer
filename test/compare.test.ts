@@ -6,17 +6,18 @@ const options: OptionsI = {
   currentBranch: 'currentBranch',
   mode: null,
   webpackConfigScript: '',
-  bundleDir: 'test/bundles/',
+  outputDir: 'test/bundles/',
 };
 
 function getOptionsForBundleCase(bundleCase: string): OptionsI {
-  return { ...options, bundleDir: options.bundleDir + bundleCase };
+  return { ...options, outputDir: options.outputDir + bundleCase };
 }
 
 describe('Compare Bundles', () => {
   describe('Bundle report should contain', () => {
     const opts = getOptionsForBundleCase('bundleRename');
     const results = compareStats(opts);
+
     it('byEntry section', () => {
       expect(Array.isArray(results.byEntry)).toBe(true);
     });
@@ -33,6 +34,20 @@ describe('Compare Bundles', () => {
 
     it('totalPercentage number', () => {
       expect(results.totalPercentage).toEqual(expect.any(Number));
+    });
+  });
+
+  describe('currentBranch bigger than master', () => {
+    const opts = getOptionsForBundleCase('biggerInCurrent');
+    const results = compareStats(opts);
+    it('should be bigger by 10kbs', () => {
+      expect(results.totalDiff).toBe(10);
+    });
+    it('should have a 10% diference', () => {
+      expect(results.totalPercentage).toBe(10);
+    });
+    it('should containe one asset bigger', () => {
+      expect(results.biggerInCurrent.length).toBe(1);
     });
   });
 });

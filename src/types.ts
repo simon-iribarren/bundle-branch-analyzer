@@ -26,7 +26,7 @@ export interface OptionsI {
   packageManager?: string;
   webpackConfigDir?: string;
   mode: string | null;
-  bundleDir: string;
+  outputDir: string;
 }
 
 export interface AssetsByChunkI {
