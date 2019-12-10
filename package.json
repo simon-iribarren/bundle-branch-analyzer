@@ -17,8 +17,10 @@
     "cli",
     "bundle-branch-analyzer",
     "bundle",
-    "bundle size",
-    "compare bundle"
+    "size",
+    "compare",
+    "analyze",
+    "webpack"
   ],
   "publishConfig": {
     "access": "public"
